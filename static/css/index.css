@@ -487,7 +487,8 @@ textarea:-webkit-autofill:focus,
       padding: 43px 23px 32px;
       background: linear-gradient(88.93deg, rgba(74, 73, 73, 0.3) 12.64%, rgba(162, 157, 157, 0.3) 100.85%);
       backdrop-filter: blur(22.5px);
-      border-radius: 15px; }
+      border-radius: 15px;
+      border: 2px solid #363636; }
       .hero-media__info:before {
         position: absolute;
         content: '';
