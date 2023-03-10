@@ -1,0 +1,405 @@
+.hero{
+  padding: 150px 0 100px;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  z-index: 2;
+  flex-direction: column;
+  justify-content: center;
+  &-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  .container{
+    height: 100%;
+    z-index: 4;
+    display: flex;
+    align-items: center;
+  }
+  &-info{
+    width: 50%;
+  }
+  &-wrap{
+    max-width: 600px;
+  }
+  &-media{
+    position: absolute;
+    z-index: 3;
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    left: auto;
+    right: 170px;
+    top: -10px;
+    .hero-svg{
+      position: absolute;
+      left: 0;
+      bottom: -100px;
+      right: 0;
+      margin: 0 auto;
+    }
+  }
+  &-left-bg{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  &-button{
+    display: flex;
+    align-items: center;
+
+    .btn-primary{
+      margin-right: 21px;
+    }
+  }
+  &-title{
+    font-family: $BebasNeueBold;
+    font-weight: 700;
+    font-size: 130px;
+    line-height: 120px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    max-width: 504px;
+    margin-bottom: 23px;
+    span{
+      color: #4324FF;
+    }
+  }
+  &-text{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+    position: relative;
+    max-width: 520px;
+    padding-left: 100px;
+    margin-bottom: 70px;
+    b{
+      font-weight: 600;
+    }
+    &:after{
+      position: absolute;
+      content: '';
+      left: 0;
+      top: 5px;
+      background-image: url("data:image/svg+xml,%3Csvg width='69' height='8' viewBox='0 0 69 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M68.3536 4.35355C68.5488 4.15829 68.5488 3.84171 68.3536 3.64645L65.1716 0.464466C64.9763 0.269204 64.6597 0.269204 64.4645 0.464466C64.2692 0.659728 64.2692 0.976311 64.4645 1.17157L67.2929 4L64.4645 6.82843C64.2692 7.02369 64.2692 7.34027 64.4645 7.53553C64.6597 7.7308 64.9763 7.7308 65.1716 7.53553L68.3536 4.35355ZM0 4.5H68V3.5H0V4.5Z' fill='white'/%3E%3C/svg%3E%0A");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 68px;
+      height: 8px;
+    }
+  }
+  &-link{
+    ul{
+      display: flex;
+    }
+    li{
+      margin-right: 15px;
+      &:last-of-type{
+        margin-right: 0;
+      }
+    }
+  }
+}
+.why{
+  position: relative;
+  z-index: 10;
+  .title-section{
+    margin-bottom: 70px;
+    .white{
+      padding-left: 100px;
+    }
+  }
+  &-item{
+    position: relative;
+    .btn-radial{
+      background: #4324FF;
+      border: 1px solid #5C42FF;
+      border-radius: 150px;
+      padding: 23px 40px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+      color: #FFFFFF;
+      margin-bottom: 40px;
+
+    }
+    &__numb{
+      position: absolute;
+      left: -100px;
+      top: 0;
+      font-family: $BebasNeueBold;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 204px;
+      line-height: 204px;
+      text-transform: uppercase;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.13) 0%, rgba(255, 255, 255, 0) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+    &__title{
+      font-family: $BebasNeueBold;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 54px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      max-width: 611px  ;
+      margin-bottom: 35px;
+      span{
+        display: block;
+        color: #4324FF;
+
+      }
+    }
+    &__text{
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+      color: #FFFFFF;
+      max-width: 390px;
+      padding-left: 100px;
+    }
+  }
+}
+.about{
+  padding: 0;
+  &-item{
+    background: #1B1F28;
+    padding: 100px 0 0;
+    overflow: hidden;
+    position: relative;
+    &:nth-of-type(1){
+      z-index: 1;
+    }
+    &:nth-of-type(2){
+      z-index: 2;
+    }
+    &:nth-of-type(3){
+      z-index: 3;
+    }
+    &:nth-of-type(4){
+      z-index: 4;
+    }
+    .container{
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+      .about-item__media{
+        text-align: left;
+      }
+    }
+    &:nth-of-type(2n+1){
+      background: #16181E;
+      .container{
+        display: flex;
+        flex-direction: row;
+      }
+      .about-item__media{
+        text-align: right;
+      }
+    }
+    &__desc{
+      width: 50%;
+    }
+    &__title{
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 48px;
+      color: #FFFFFF;
+      margin-bottom: 10px;
+    }
+    &__text{
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 36px;
+      color: #FFFFFF;
+    }
+    &__media{
+      width: 50%;
+      margin-bottom: -5px;
+      img{
+        display: inline-block;
+      }
+    }
+  }
+}
+.reviews{
+  background: #16181E;
+  padding: 150px 0 140px;
+  .title-section{
+    margin-bottom: 37px;
+  }
+  &-wrap{
+    position: relative;
+  }
+  &-slider{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+  }
+  &-item{
+    border-radius: 8px;
+    width: calc(33.333% - 30px);
+    margin: 0 15px 30px;
+    img{
+      width: 100%;
+      border-radius: inherit;
+    }
+  }
+  .prev, .next{
+    display: none;
+    position: absolute;
+    top: 50%;
+    width: 16px;
+    height: 30px;
+    margin-top: -15px;
+    padding: 6px 0 0 0;
+    background: rgba(36, 107, 253, .6);
+    opacity: 0.6;
+    .icon{
+      width: 16px;
+      height: 16px;
+      stroke: #fff;
+      fill: transparent;
+    }
+  }
+  .prev{
+    left: -15px;
+    border-radius: 0px 4px 4px 0px;
+  }
+  .next{
+    right: -15px;
+    border-radius: 4px 0px  0px 4px;
+  }
+  .btn-primary{
+    padding: 20px 56px;
+  }
+}
+.contacts{
+  padding: 150px 0;
+  background-attachment: fixed;
+  background-size: cover;
+  .container{
+    display: flex;
+  }
+  &-desc{
+    width: 50%;
+    .title-section{
+      margin-bottom: 25px;
+    }
+    .text-section{
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 37px;
+      color: #FFFFFF;
+      max-width: 525px;
+    }
+  }
+  &-form{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    form{}
+    label{
+      position: relative;
+      display: block;
+      width: 470px;
+      margin-bottom: 30px;
+    }
+    .icon{
+      position: absolute;
+      left: 0;
+      top: 0;
+      fill: none;
+      stroke: #fff;
+      width: 32px;
+      height: 32px;
+    }
+    input, textarea{
+      display: block;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: #FFFFFF;
+      padding: 0 15px 30px 51px;
+      &::placeholder{
+        color: #FFFFFF;
+      }
+    }
+    .btn-primary{
+      padding: 20px 43px;
+    }
+  }
+}
+.gallery{
+  background: #16181E;
+  padding: 150px 0;
+  .title-section{
+    margin-bottom: 40px;
+  }
+  &-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto 70px;
+    max-width: 1600px;
+  }
+  &-item{
+    width: 25%;
+    margin: 0 0 30px;
+    padding: 0 15px;
+    img{
+      width: 100%;
+    }
+  }
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .subtitle-section{
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 42px;
+    color: #FFFFFF;
+    width: 50%;
+    max-width: 525px;
+    position: relative;
+    &:after{
+      position: absolute;
+      content: '';
+      right: -50%;
+      top: 50%;
+      margin-top: -12px;
+      background-image: url("data:image/svg+xml,%3Csvg width='222' height='24' viewBox='0 0 222 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M221.561 13.0607C222.146 12.4749 222.146 11.5251 221.561 10.9393L212.015 1.3934C211.429 0.807611 210.479 0.807611 209.893 1.3934C209.308 1.97919 209.308 2.92893 209.893 3.51472L218.379 12L209.893 20.4853C209.308 21.0711 209.308 22.0208 209.893 22.6066C210.479 23.1924 211.429 23.1924 212.015 22.6066L221.561 13.0607ZM0 13.5H220.5V10.5H0V13.5Z' fill='%23246BFD'/%3E%3C/svg%3E%0A");
+      background-repeat: no-repeat;
+      width: 222px;
+      height: 24px;
+    }
+  }
+  .social-link{
+    ul{
+      display: flex;
+    }
+    li{
+      margin-right: 15px;
+      &:last-of-type{
+        margin-right: 0;
+      }
+    }
+    a{
+      &:hover{
+        opacity: .9;
+      }
+    }
+  }
+}

@@ -1,0 +1,224 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  font-family: $Montserrat;
+  background: #0C0C0C;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  overflow-x: hidden;
+}
+.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}
+@media (min-width:1200px){.container{max-width:1170px}}
+h1, h2, h3, h4, h5, h6{
+  font-family: $Montserrat;
+}
+h1 {
+  font-size: 42px;
+  line-height: 42px;
+}
+
+h2 {
+  font-size: 42px;
+  line-height: 42px;
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+h4 {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+h5 {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+h6 {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 23px;
+}
+
+img {
+  display: block;
+  //width: 100%;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+section {
+  position: relative;
+  padding: 40px 0;
+  z-index: 1;
+}
+
+.row.min {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.row.min > div[class^="col-"] {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.overflow {
+  overflow: hidden !important;
+}
+
+.hidden {
+  display: none !important;
+}
+.btn-primary{
+  font-family: $Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 120.5%;
+  text-align: center;
+  letter-spacing: 0.085em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: linear-gradient(258.35deg, #4324FF 42.6%, #2A179F 101.59%);
+  box-shadow: 0px 1px 0px #5D42FF, 0px 4px 0px #351EC6;
+  border-radius: 10px;
+  padding: 38px 48px 30px;
+  display: inline-block;
+  &:hover{
+    background: #2567e5;
+    box-shadow: none;
+  }
+}
+.btn-secondary{
+  background: linear-gradient(258.48deg, #2C2C2C 42.68%, #272727 101.78%);
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.055em;
+  color: #FFFFFF;
+  display: inline-block;
+  padding: 29px 40px 25px;
+}
+.title-section{
+  font-family: $BebasNeueBold;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 110px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  .blue{
+    color: #4324FF;
+  }
+}
+.clearfix {
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+a,
+button,
+input,
+select,
+textarea,
+span,
+.icon {
+  transition: all 150ms ease;
+}
+button{
+  cursor: pointer;
+}
+input, textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+input,  textarea{
+  display: inline-block;
+  font-family: $Gilroy;
+  padding: 15px;
+  outline: none;
+  width: 100%;
+  background: transparent;
+  border:0;
+  border-bottom: 1px solid #fff;
+  border-radius: 2px;
+  text-overflow: ellipsis;
+  //&::-webkit-input-placeholder {
+  //  color: $gray;
+  //  opacity: 1;
+  //}
+  //&::-moz-placeholder {
+  //  color: $gray;
+  //  opacity: 1;
+  //}
+  //&:-moz-placeholder {
+  //  color: $gray;
+  //  opacity: 1;
+  //}
+  //&::-ms-input-placeholder {
+  //  color: $gray;
+  //  opacity: 1;
+  //}
+  //&:-ms-input-placeholder {
+  //  color: $gray;
+  //  opacity: 1;
+  //}
+  //&:focus,
+  //&:active {
+  //  border-color: $default;
+  //}
+  //// invalid
+  //&:invalid {
+  //  box-shadow: none;
+  //}
+  //&:-moz-submit-invalid {
+  //  box-shadow: none;
+  //}
+  //&:-moz-ui-invalid {
+  //  box-shadow: none;
+  //}
+}
+.textarea{
+  resize: none;
+  height: 58px;
+}
+.contacts{
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus
+  input:-webkit-autofill,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover
+  textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus {
+    -webkit-text-fill-color: #fff;
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+    transition: background-color 5000s ease-in-out 0s;
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(0,174,255,0.04) 50%,rgba(255,255,255,0) 51%,rgba(0,174,255,0.03) 100%);
+  }
+}
